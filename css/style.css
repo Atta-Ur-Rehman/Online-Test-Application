@@ -1,0 +1,450 @@
+#html {
+    border-radius:10px 10px 10px 10px;
+    width: 80px;
+    height: 80px;
+    background: #20af37;
+    margin: 30px;
+    position: relative;
+    /* Chrome, Safari, Opera */
+    -webkit-animation-name: myfirst;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+    /* Standard syntax */
+    animation-name: myfirst;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myfirst {
+    0%   {background:red; left:10px; top:0px;}
+    25%  {background:yellow; left:50px; top:0px;}
+    50%  {background:blue; left:50px; top:80px;}
+    75%  {background:green; left:10px; top:80px;}
+    100% {background:red; left:10px; top:0px;}
+}
+#CSS {
+    border-radius:10px 10px 10px 10px;
+    width: 80px;
+    height: 80px;
+    background: #2245af;
+    margin: 30px;
+    position: relative;
+    /* Chrome, Safari, Opera */
+    -webkit-animation-name: css;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+    /* Standard syntax */
+    animation-name: css;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes css {
+    0%   {background: #281fff; left:10px; top:0px;}
+    25%  {background: #ff6582; left:50px; top:0px;}
+    50%  {background: #fffb1d; left:50px; top:80px;}
+    75%  {background: #712280; left:10px; top:80px;}
+    100% {background: #08ff1d; left:10px; top:0px;}
+}
+#HTML5 {
+    border-radius:10px 10px 10px 10px;
+    width: 80px;
+    height: 80px;
+    background: #afac18;
+    margin: 30px;
+    position: relative;
+    /* Chrome, Safari, Opera */
+    -webkit-animation-name: HTML5;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+    /* Standard syntax */
+    animation-name: HTML5;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes HTML5 {
+    0%   {background: #fff511; left:10px; top:0px;}
+    25%  {background: #1fff33; left:50px; top:0px;}
+    50%  {background: #ff111f; left:50px; top:80px;}
+    75%  {background: #620f80; left:10px; top:80px;}
+    100% {background: #22d1ff; left:10px; top:0px;}
+}
+#CSS3 {
+
+    border-radius:10px 10px 10px 10px;
+    width: 80px;
+    height: 80px;
+    background: #af6204;
+    margin: 30px;
+    position: relative;
+    /* Chrome, Safari, Opera */
+    -webkit-animation-name: css3;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+    /* Standard syntax */
+    animation-name: css3;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes css3 {
+    0%   {background: #14ff0c; left:10px; top:0px;}
+    25%  {background: #e61dff; left:50px; top:0px;}
+    50%  {background: #fffc18; left:50px; top:80px;}
+    75%  {background: #806040; left:10px; top:80px;}
+    100% {background:red; left:10px; top:0px;}
+}
+#Javascript {
+    border-radius:10px 10px 10px 10px;
+    width: 80px;
+    height: 80px;
+    background: #9713af;
+    margin: 30px;
+    position: relative;
+    /* Chrome, Safari, Opera */
+    -webkit-animation-name: Javascript;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+    /* Standard syntax */
+    animation-name: Javascript;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes Javascript {
+    0%   {background: #12c4ff; left:10px; top:0px;}
+    25%  {background: #e9ff70; left:50px; top:0px;}
+    50%  {background: #ea76ff; left:50px; top:80px;}
+    75%  {background: #458039; left:10px; top:80px;}
+    100% {background: #ffa859; left:10px; top:0px;}
+}
+#Angular_JS {
+
+    border-radius:10px 10px 10px 10px;
+    width: 80px;
+    height: 80px;
+    background: #af8381;
+    margin: 30px;
+    position: relative;
+    /* Chrome, Safari, Opera */
+    -webkit-animation-name: Angular_JS;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+    /* Standard syntax */
+    animation-name: Angular_JS;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes Angular_JS {
+    0%   {background: #ff7d12; left:10px; top:0px;}
+    25%  {background: #fffb1d; left:50px; top:0px;}
+    50%  {background: #458039; left:50px; top:80px;}
+    75%  {background: #12c4ff; left:10px; top:80px;}
+    100% {background:red; left:10px; top:0px;}
+}
+#facebook {
+
+    border-radius:10px 10px 10px 10px;
+    width: 150px;
+    height: 40px;
+    background: #0faf08;
+    margin: 40px;
+    position: relative;
+    /* Chrome, Safari, Opera */
+    -webkit-animation-name: facebook;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+    /* Standard syntax */
+    animation-name: facebook;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes facebook {
+    0%   {background: #23a1ff; left:0px; top:0px;}
+    25%  {background: #ff401b; left:0px; top:0px;}
+    50%  {background: #ffe309; left:0px; top:0px;}
+    75%  {background: #3bff0e; left:0px; top:0px;}
+    100% {background: #f320ff; left:0px; top:0px;}
+}
+#twi {
+
+    border-radius:10px 10px 10px 10px;
+    width: 150px;
+    height: 40px;
+    background: #fffa0a;
+    margin: 40px;
+    position: relative;
+    /* Chrome, Safari, Opera */
+    -webkit-animation-name: twi;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+    /* Standard syntax */
+    animation-name: twi;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes twi {
+    0%   {background: #150bff; left:0px; top:0px;}
+    25%  {background: #ff07ad; left:0px; top:0px;}
+    50%  {background: #1cff06; left:0px; top:0px;}
+    75%  {background: #ff0509; left:0px; top:0px;}
+    100% {background: #03fffa; left:0px; top:0px;}
+}
+#linked{
+
+    border-radius:10px 10px 10px 10px;
+    width: 150px;
+    height: 40px;
+    background: #ff401b;
+    margin: 40px;
+    position: relative;
+    /* Chrome, Safari, Opera */
+    -webkit-animation-name: linked;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+    /* Standard syntax */
+    animation-name: linked;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes linked {
+    0%   {background: #ea76ff; left:0px; top:0px;}
+    25%  {background: #ffa859; left:0px; top:0px;}
+    50%  {background: #e9ff70; left:0px; top:0px;}
+    75%  {background: #3bff0e; left:0px; top:0px;}
+    100% {background: #806040; left:0px; top:0px;}
+}
+#mail {
+    border-radius:10px 10px 10px 10px;
+    width: 150px;
+    height: 40px;
+    background: #ff9106;
+    margin: 40px;
+    position: relative;
+    /* Chrome, Safari, Opera */
+    -webkit-animation-name: mail;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+    /* Standard syntax */
+    animation-name: mail;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mail {
+    0%   {background: #ff7d12; left:0px; top:0px;}
+    25%  {background: #fffb1d; left:0px; top:0px;}
+    50%  {background: #458039; left:0px; top:0px;}
+    75%  {background: #12c4ff; left:0px; top:0px;}
+    100% {background:red; left:0px; top:0px;}
+}
+#face_book{
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+    -ms-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+
+}
+
+#face_book:hover {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-filter: grayscale(100%);
+
+}
+#Twitter{
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+    -ms-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+
+}
+
+#Twitter:hover {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-filter: grayscale(100%);
+
+}
+#linked_in{
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+    -ms-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+
+}
+
+#linked_in:hover {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-filter: grayscale(100%);
+
+}
+#gmail{
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+    -ms-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+
+}
+
+#gmail:hover {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-filter: grayscale(100%);
+
+}
+#attaur{
+    color: #93FF27;
+}
+#atta{
+    color: #3bff0e;
+}
+#javascript_changecolor{
+    color:#ffffff;
+    -webkit-animation-play-state: running;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name:javascript;
+    -webkit-animation-duration:5s;
+
+}
+@-webkit-keyframes javascript {
+    0%   {color: #ff7d12; left:0px; top:0px;}
+    25%  {color: #fffb1d; left:0px; top:0px;}
+    50%  {color: #458039; left:0px; top:0px;}
+    75%  {color: #12c4ff; left:0px; top:0px;}
+    100% {color: #efff6d; left:0px; top:0px;}
+}
+#email{
+
+    width: 200px;
+    background: #ffffff;
+    -webkit-animation-play-state: running;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name:email;
+    -webkit-animation-duration:5s;
+}
+@-webkit-keyframes email {
+    0%   {background: #bdffa3; left:0px; top:0px;}
+    25%  {background: #c3ffff; left:0px; top:0px;}
+    50%  {background: #fdd0d3; left:0px; top:0px;}
+    75%  {background: #94e0ff; left:0px; top:0px;}
+    100% {background: #fff5a1; left:0px; top:0px;}
+}
+#myDiv{
+    border: thin solid #ffffff;
+    width: 700px;
+    height: 300px;
+    text-align: center;
+}
