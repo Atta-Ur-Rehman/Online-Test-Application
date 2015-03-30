@@ -7,10 +7,16 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/style.css">
-
-    <!--Script-->
+    <script src="js/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
+ <!--Server Connection-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.2.2/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/1.0.0/angularfire.min.js"></script>
+    <script src="js/script.js"></script>
+    <!---->
     <style type="text/css">
         .bs-example{
             margin: 20px;
@@ -23,8 +29,31 @@
 
         }
     </style>
+    <script>
+    var seconds = 1800;
+    function secondPassed() {
+    var minutes = Math.round((seconds - 30)/60);
+    var remainingSeconds = seconds % 60;
+    if (remainingSeconds < 10) {
+    remainingSeconds = "0" + remainingSeconds;
+    }
+    document.getElementById('countdown').innerHTML = minutes + ":" + remainingSeconds;
+    if (seconds == 0) {
+    clearInterval(countdownTimer);
+    window.location.href='text_end.html';
+    } else {
+    seconds--;
+    }
+    }
+
+    var countdownTimer = setInterval('secondPassed()', 1000);
+    </script>
+
+
+
+
 </head>
-<body id="image">
+<body id="image" ng-app = "simpleApp">
 <div class="bs-example" >
     <nav id="myNavbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -71,47 +100,185 @@
 <br>
 <h1 id="javascript_changecolor" class="text-center">HTML ONLINE TEST</h1>
 <br>
+<h1 id="countdown" class="timer" style ="color:#ffffff; margin-left: 100px;"></h1>
 <br>
-<div class="row">
-    <div class="container">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <p style="color: #ffffff;"><b>Note: Attempt All Questions , Only 30 minutes you have to complete your test if you willnot complete your test in given time so your test will not be submit,</b>
+                <h3 style="color: #ffffff">Only mention your name in first input box <br>Only mention the OPTION in answer box</h3>
+            </p>
+        </div>
+    </div>
+ </div>
+<div class="row" ng-controller="Questions">
+    <div class="container" >
         <form role="form">
             <div class="form-group">
-                <input type="text" class="form-control" id="email" placeholder="Your Name" required>
+                <input type="text" class="form-control" id="email" placeholder="Your Name" required ng-model="name">
             </div>
-            <h3 style="color:#ffffff">Question 1:</h3>
+            <h3 style="color:#ffffff">1. What is the correct HTML tag for inserting a line break?</h3>
             <ol>
-                <li style="color: #ffffff;">Option A</li>
-                <li style="color: #ffffff;">Option B</li>
-                <li style="color: #ffffff;">Option C</li>
-                <li style="color: #ffffff;">Option D</li>
+                <li style="color: #ffffff;">b</li>
+                <li style="color: #ffffff;">br</li>
+                <li style="color: #ffffff;">hr</li>
+                <li style="color: #ffffff;">break</li>
             </ol>
-            <input type="text" class="form-control" id="pwd" placeholder="Enter Option" style="width: 200px;">
-            <h3 style="color:#ffffff">Question 1:</h3>
+            <input type="text" class="form-control" id="pwd" placeholder="Enter Option" style="width: 200px;" ng-model="answerone">
+            <h3 style="color:#ffffff">2. What is the preferred way for adding a background color in HTML?</h3>
             <ol>
-                <li style="color: #ffffff;">Option A</li>
-                <li style="color: #ffffff;">Option B</li>
-                <li style="color: #ffffff;">Option C</li>
-                <li style="color: #ffffff;">Option D</li>
+                <li style="color: #ffffff;"><h4>A :</h4>< body background="yellow"> </li>
+                <li style="color: #ffffff;"><h4>B :</h4>< body style="background-color:yellow;"> </li>
+                <li style="color: #ffffff;"><h4>C :</h4> < body style="bg-color:yellow;"></li>
+                <li style="color: #ffffff;"><h4>D :</h4> All</li>
             </ol>
-            <input type="text" class="form-control" id="pwd" placeholder="Enter Option" style="width: 200px;">
-            <h3 style="color:#ffffff">Question 1:</h3>
+            <input type="text" class="form-control" id="pwd" placeholder="Enter Option" style="width: 200px;" ng-model="answertwo">
+            <h3 style="color:#ffffff">3. What does HTML stand for?</h3>
             <ol>
-                <li style="color: #ffffff;">Option A</li>
-                <li style="color: #ffffff;">Option B</li>
-                <li style="color: #ffffff;">Option C</li>
-                <li style="color: #ffffff;">Option D</li>
+                <li style="color: #ffffff;"><h4>A :</h4> Hyper Text Markup Language</li>
+                <li style="color: #ffffff;"><h4>B :</h4> Hyperlinks and Text Markup Language</li>
+                <li style="color: #ffffff;"><h4>C :</h4>Home Tool Markup Language</li>
+                <li style="color: #ffffff;"><h4>D :</h4> All Above them</li>
             </ol>
-            <input type="text" class="form-control" id="pwd" placeholder="Enter Option" style="width: 200px;">
-            <h3 style="color:#ffffff">Question 1:</h3>
+            <input type="text" class="form-control" id="pwd" placeholder="Enter Option" style="width: 200px;" ng-model="answerthree">
+            <h3 style="color:#ffffff">4. Who is making the Web standards?</h3>
             <ol>
-                <li style="color: #ffffff;">Option A</li>
-                <li style="color: #ffffff;">Option B</li>
-                <li style="color: #ffffff;">Option C</li>
-                <li style="color: #ffffff;">Option D</li>
+                <li style="color: #ffffff;"><h4>A :</h4>The World Wide Web Consortium</li>
+                <li style="color: #ffffff;"><h4>B :</h4>Mozilla</li>
+                <li style="color: #ffffff;"><h4>C :</h4>Google</li>
+                <li style="color: #ffffff;"><h4>D :</h4>Microsoft</li>
             </ol>
-            <input type="text" class="form-control" id="pwd" placeholder="Enter Option" style="width: 200px;">
+            <input type="text" class="form-control" id="pwd" placeholder="Enter Option" style="width: 200px;" ng-model="answerfour">
+            <h3 style="color:#ffffff">5. Choose the correct HTML tag for the largest heading</h3>
+            <ol>
+                <li style="color: #ffffff;"><h4>A :</h4>< heading> </li>
+                <li style="color: #ffffff;"><h4>B :</h4>< h1></li>
+                <li style="color: #ffffff;"><h4>C :</h4>< head></li>
+                <li style="color: #ffffff;"><h4>D :</h4>< h6></li>
+            </ol>
+            <input type="text" class="form-control" id="pwd" placeholder="Enter Option" style="width: 200px;" ng-model="answerfive">
+            <h3 style="color:#ffffff">6. Choose the correct HTML tag to make a text bold</h3>
+            <ol>
+                <li style="color: #ffffff;"><h4>A :</h4>< b></li>
+                <li style="color: #ffffff;"><h4>B :</h4>< bold></li>
+                <li style="color: #ffffff;"><h4>C :</h4>< bl></li>
+                <li style="color: #ffffff;"><h4>D :</h4>< bl-text></li>
+            </ol>
+            <input type="text" class="form-control" id="pwd" placeholder="Enter Option" style="width: 200px;" ng-model="answersix">
+            <h3 style="color:#ffffff">7. Choose the correct HTML tag to make a text italic</h3>
+            <ol>
+                <li style="color: #ffffff;"><h4>A :</h4>< italic></li>
+                <li style="color: #ffffff;"><h4>B :</h4>< i></li>
+                <li style="color: #ffffff;"><h4>C :</h4>< it></li>
+                <li style="color: #ffffff;"><h4>D :</h4> None of them</li>
+            </ol>
+            <input type="text" class="form-control" id="pwd" placeholder="Enter Option" style="width: 200px;" ng-model="answerseven">
+            <h3 style="color:#ffffff">8. What is the correct HTML for creating a hyperlink?</h3>
+            <ol>
+                <li style="color: #ffffff;"><h4>A :</h4>< a url="http://www.w3schools.com">W3Schools.com< /a></li>
+                <li style="color: #ffffff;"><h4>B :</h4>< a>http://www.w3schools.com< /a></li>
+                <li style="color: #ffffff;"><h4>C :</h4>< a name="http://www.w3schools.com">W3Schools.com< /a></li>
+                <li style="color: #ffffff;"><h4>D :</h4>< a href="http://www.w3schools.com">W3Schools< /a></li>
+            </ol>
+            <input type="text" class="form-control" id="pwd" placeholder="Enter Option" style="width: 200px;" ng-model="answereight">
+            <h3 style="color:#ffffff">9. How can you create an e-mail link?</h3>
+            <ol>
+                <li style="color: #ffffff;"><h4>A :</h4>< mail href="xxx@yyy"></li>
+                <li style="color: #ffffff;"><h4>B :</h4>< mail>xxx@yyy< /mail></li>
+                <li style="color: #ffffff;"><h4>C :</h4>< a href="xxx@yyy"></li>
+                <li style="color: #ffffff;"><h4>D :</h4>< a href="mailto:xxx@yyy"></li>
+            </ol>
+            <input type="text" class="form-control" id="pwd" placeholder="Enter Option" style="width: 200px;" ng-model="answernine">
+            <h3 style="color:#ffffff">10. How can you open a link in a new tab/browser window? </h3>
+            <ol>
+                <li style="color: #ffffff;"><h4>A :</h4>< a href="url" target="new"></li>
+                <li style="color: #ffffff;"><h4>B :</h4>< a href="url" new></li>
+                <li style="color: #ffffff;"><h4>C :</h4>< a href="url" target="_blank"></li>
+                <li style="color: #ffffff;"><h4>D :</h4>none of them</li>
+            </ol>
+            <input type="text" class="form-control" id="pwd" placeholder="Enter Option" style="width: 200px;" ng-model="answerten">
+            <h3 style="color:#ffffff">11. Which of these tags are all <table> tags?</h3>
+            <ol>
+                <li style="color: #ffffff;"><h4>A :</h4>< thead>< body>< tr></li>
+                <li style="color: #ffffff;"><h4>B :</h4>< table>< tr>< td></li>
+                <li style="color: #ffffff;"><h4>C :</h4>< table>< tr>< tt></li>
+                <li style="color: #ffffff;"><h4>D :</h4>< table>< head>< tfoot></li>
+            </ol>
+            <input type="text" class="form-control" id="pwd" placeholder="Enter Option" style="width: 200px;" ng-model="answereleven">
+            <h3 style="color:#ffffff">12. In HTML, inline elements are normally displayed without starting a new line.</h3>
+            <ol>
+                <li style="color: #ffffff;"><h4>A :</h4>False</li>
+                <li style="color: #ffffff;"><h4>B :</h4>True</li>
+                <li style="color: #ffffff;"><h4>C :</h4>none of them</li>
+                <li style="color: #ffffff;"><h4>D :</h4>Inline</li>
+            </ol>
+            <input type="text" class="form-control" id="pwd" placeholder="Enter Option" style="width: 200px;" ng-model="answertwelve">
+            <h3 style="color:#ffffff">13. How can you make a numbered list?</h3>
+            <ol>
+                <li style="color: #ffffff;"><h4>A :</h4>< ul></li>
+                <li style="color: #ffffff;"><h4>B :</h4>< list></li>
+                <li style="color: #ffffff;"><h4>C :</h4>< dl></li>
+                <li style="color: #ffffff;"><h4>D :</h4>< ol></li>
+            </ol>
+            <input type="text" class="form-control" id="pwd" placeholder="Enter Option" style="width: 200px;" ng-model="answerthirteen">
+            <h3 style="color:#ffffff">14. How can you make a bulleted list?</h3>
+            <ol>
+                <li style="color: #ffffff;"><h4>A :</h4>< list></li>
+                <li style="color: #ffffff;"><h4>B :</h4>< ol></li>
+                <li style="color: #ffffff;"><h4>C :</h4>< dl></li>
+                <li style="color: #ffffff;"><h4>D :</h4>< ul></li>
+            </ol>
+            <input type="text" class="form-control" id="pwd" placeholder="Enter Option" style="width: 200px;" ng-model="answerfourteen">
+            <h3 style="color:#ffffff">15. What is the correct HTML for making a checkbox?</h3>
+            <ol>
+                <li style="color: #ffffff;"><h4>A :</h4>< check></li>
+                <li style="color: #ffffff;"><h4>B :</h4>< input type="check"></li>
+                <li style="color: #ffffff;"><h4>C :</h4>< checkbox></li>
+                <li style="color: #ffffff;"><h4>D :</h4>< input type="checkbox"></li>
+            </ol>
+            <input type="text" class="form-control" id="pwd" placeholder="Enter Option" style="width: 200px;" ng-model="answerfifteen">
+            <h3 style="color:#ffffff">16. What is the correct HTML for making a text input field?</h3>
+            <ol>
+                <li style="color: #ffffff;"><h4>A :</h4>< input type="text"></li>
+                <li style="color: #ffffff;"><h4>B :</h4>< textinput type="text"></li>
+                <li style="color: #ffffff;"><h4>C :</h4>< input type="textfield"></li>
+                <li style="color: #ffffff;"><h4>D :</h4>< textfield></li>
+            </ol>
+            <input type="text" class="form-control" id="pwd" placeholder="Enter Option" style="width: 200px;" ng-model="answersixteen">
+            <h3 style="color:#ffffff">17. What is the correct HTML for making a drop-down list?</h3>
+            <ol>
+                <li style="color: #ffffff;"><h4>A :</h4>< select></li>
+                <li style="color: #ffffff;"><h4>B :</h4>< input type="dropdown"></li>
+                <li style="color: #ffffff;"><h4>C :</h4>< list></li>
+                <li style="color: #ffffff;"><h4>D :</h4>< input type="list"></li>
+            </ol>
+            <input type="text" class="form-control" id="pwd" placeholder="Enter Option" style="width: 200px;" ng-model="answerseventeen">
+            <h3 style="color:#ffffff">18. What is the correct HTML for making a text area?</h3>
+            <ol>
+                <li style="color: #ffffff;"><h4>A :</h4>< textarea></li>
+                <li style="color: #ffffff;"><h4>B :</h4>< input type="textarea"></li>
+                <li style="color: #ffffff;"><h4>C :</h4>< input type="textbox"></li>
+                <li style="color: #ffffff;"><h4>D :</h4>All</li>
+            </ol>
+            <input type="text" class="form-control" id="pwd" placeholder="Enter Option" style="width: 200px;" ng-model="answereighteen">
+            <h3 style="color:#ffffff">19. What is the correct HTML for inserting an image?</h3>
+            <ol>
+                <li style="color: #ffffff;"><h4>A :</h4>< image src="image.gif" alt="MyImage"></li>
+                <li style="color: #ffffff;"><h4>B :</h4>< img href="image.gif" alt="MyImage"></li>
+                <li style="color: #ffffff;"><h4>C :</h4>< img alt="MyImage">image.gif</img></li>
+                <li style="color: #ffffff;"><h4>D :</h4>< img src="image.gif" alt="MyImage"></li>
+            </ol>
+            <input type="text" class="form-control" id="pwd" placeholder="Enter Option" style="width: 200px;" ng-model="answerninteen">
+            <h3 style="color:#ffffff">20. What is the correct HTML for inserting a background image?</h3>
+            <ol>
+                <li style="color: #ffffff;"><h4>A :</h4>< body background="background.gif"></li>
+                <li style="color: #ffffff;"><h4>B :</h4>< background img="background.gif"></li>
+                <li style="color: #ffffff;"><h4>C :</h4>< body style="background-image:url(background.gif)"></li>
+                <li style="color: #ffffff;"><h4>D :</h4>All</li>
+            </ol>
+            <input type="text" class="form-control" id="pwd" placeholder="Enter Option" style="width: 200px;" ng-model="answertwenty">
             <br>
-            <button type="submit" class="btn btn-default">Submit</button>
+            <button ng-click="submit()" class="btn-success">Submit</button>
         </form>
     </div>
 </div>
